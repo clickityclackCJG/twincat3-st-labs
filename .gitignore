@@ -1,0 +1,28 @@
+# TwinCAT temporary and build files
+*.compiled-library
+*.compileinfo
+*.tmcRefac
+*.library
+*.project.~u
+*.tclrs
+*.tnzip
+*.tpy
+*.tpzip
+*.tsproj.bk?
+*.tszip
+*.xti.bk?
+LineIDs.dbg
+_Boot/
+_CompileInfo/
+_Libraries/
+
+# Visual Studio temporary files and cache
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
