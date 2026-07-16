@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1">
-  <POU Name="MAIN" Id="{0e55efb8-bf28-4092-ae9b-810ae4fa97c3}">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.16">
+  <POU Name="MAIN" Id="{0e55efb8-bf28-4092-ae9b-810ae4fa97c3}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	iHeartBeat : DINT;
 END_VAR
-]]>
-    </Declaration>
+]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[
+
+iHeartBeat := iHeartBeat + 1;]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="8" Count="1" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
